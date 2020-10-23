@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill">
+    <mat-label>Marca de Coche</mat-label>
+    <mat-select [value]="marcaSeleccionada" (selectionChange)="marcaSeleccionada = $event.value">
+      <mat-option *ngFor="let marca of marcas" [value]="marca">
+        {{marca}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+<app-coches [marca]="marcaSeleccionada"></app-coches>

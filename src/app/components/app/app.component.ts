@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parte26';
+
+  marcaSeleccionada: string = 'Toyota';
+
+  marcas: String[] = ['Volvo', 'Toyota', 'Mercedes', 'Hyundai'];
 }
